@@ -6,6 +6,7 @@ import { Section } from "@/components/section";
 import { ProjectGallery } from "@/components/project-gallery";
 import { FooterCta } from "@/components/footer-cta";
 import { getProject, getAllProjectSlugs } from "@/lib/projects";
+import { ProjectSchema } from "@/components/schema-org";
 import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -42,6 +43,12 @@ export default async function ProjectDetailPage({
 
   return (
     <>
+      <ProjectSchema
+        name={project.title}
+        description={project.seo.description}
+        locationName={project.neighborhood}
+        slug={project.slug}
+      />
       {/* Hero */}
       <Section py="md" className="pt-8">
         <Link

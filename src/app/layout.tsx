@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { OrganizationSchema } from "@/components/schema-org";
+import { PostHogProvider } from "@/components/posthog-provider";
 import "./globals.css";
 
 const inter = Inter({
@@ -46,7 +48,8 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
-        {children}
+        <OrganizationSchema />
+        <PostHogProvider>{children}</PostHogProvider>
         <Analytics />
       </body>
     </html>
