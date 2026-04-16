@@ -1,0 +1,70 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "services": "Diensten",
+    "projects": "Projecten",
+    "about": "Over ons",
+    "team": "Team",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "quote": "Offerte",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Sluiten"
+  },
+  "Cta": {
+    "primary": "Plan een gesprek",
+    "calculator": "Bereken uw richtprijs",
+    "viewProjects": "Bekijk onze projecten",
+    "viewAllProjects": "Alle projecten",
+    "getStarted": "Start een project",
+    "learnMore": "Meer informatie",
+    "comingSoon": "Binnenkort live"
+  },
+  "LanguageSwitcher": {
+    "label": "Taal",
+    "nl": "Nederlands",
+    "en": "English",
+    "switchToDutch": "Nederlandse versie",
+    "switchToEnglish": "English version"
+  },
+  "Footer": {
+    "tagline": "Gemaakt met vakmanschap in Haarlem.",
+    "copyright": "© {year} Tripod BV",
+    "legal": "Tripod BV",
+    "kvk": "KVK",
+    "btw": "BTW",
+    "founded": "Opgericht",
+    "privacyPolicy": "Privacybeleid",
+    "servicesHeading": "Diensten",
+    "aboutHeading": "Over Tripod",
+    "contactHeading": "Contact"
+  },
+  "Common": {
+    "loading": "Laden...",
+    "error": "Er ging iets mis",
+    "tryAgain": "Probeer opnieuw"
+  },
+  "ComingSoon": {
+    "title": "Binnenkort live",
+    "body": "Deze pagina wordt binnenkort geplaatst. Neem intussen contact met ons op voor vragen.",
+    "cta": "Plan een gesprek"
+  },
+  "Form": {
+    "name": "Naam",
+    "email": "E-mailadres",
+    "phone": "Telefoon",
+    "projectType": "Type project",
+    "projectSize": "Globale omvang",
+    "qualityTier": "Kwaliteitsklasse",
+    "message": "Uw bericht",
+    "attachment": "Bijlage: plattegrond (optioneel)",
+    "privacyConsent": "Ik ga akkoord met het privacybeleid van Tripod BV.",
+    "submit": "Verstuur bericht",
+    "submitting": "Versturen...",
+    "successTitle": "Bedankt!",
+    "successBody": "Uw bericht is verstuurd. We reageren binnen één werkdag.",
+    "urgentNote": "Heeft u haast? Bel of WhatsApp ons direct: +31 6 1437 4866.",
+    "disabled": "Formulier komt binnenkort live — neem voor nu direct contact op."
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "about": "About",
+    "team": "Team",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "quote": "Quote",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "Cta": {
+    "primary": "Book a call",
+    "calculator": "Get an indicative price",
+    "viewProjects": "See our projects",
+    "viewAllProjects": "All projects",
+    "getStarted": "Start a project",
+    "learnMore": "Learn more",
+    "comingSoon": "Coming soon"
+  },
+  "LanguageSwitcher": {
+    "label": "Language",
+    "nl": "Nederlands",
+    "en": "English",
+    "switchToDutch": "Nederlandse versie",
+    "switchToEnglish": "English version"
+  },
+  "Footer": {
+    "tagline": "Made with craftsmanship in Haarlem.",
+    "copyright": "© {year} Tripod BV",
+    "legal": "Tripod BV",
+    "kvk": "KVK",
+    "btw": "VAT",
+    "founded": "Founded",
+    "privacyPolicy": "Privacy policy",
+    "servicesHeading": "Services",
+    "aboutHeading": "About Tripod",
+    "contactHeading": "Contact"
+  },
+  "Common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "tryAgain": "Try again"
+  },
+  "ComingSoon": {
+    "title": "Coming soon",
+    "body": "This page will go live soon. In the meantime, please get in touch with any questions.",
+    "cta": "Book a call"
+  },
+  "Form": {
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "projectType": "Project type",
+    "projectSize": "Rough size",
+    "qualityTier": "Quality tier",
+    "message": "Your message",
+    "attachment": "Attachment: floor plan (optional)",
+    "privacyConsent": "I agree to the Tripod BV privacy policy.",
+    "submit": "Send message",
+    "submitting": "Sending...",
+    "successTitle": "Thank you!",
+    "successBody": "Your message has been sent. We'll respond within one working day.",
+    "urgentNote": "In a hurry? Call or WhatsApp us directly: +31 6 1437 4866.",
+    "disabled": "The form will be live soon — for now, please contact us directly."
+  }
+}
