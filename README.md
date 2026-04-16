@@ -1,36 +1,143 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tripod BV Website
 
-## Getting Started
+Public marketing website for **Tripod BV** — Dutch construction company (aannemer) based in Breukelen, working across Haarlem, Amsterdam, and Noord-Holland.
 
-First, run the development server:
+**Live preview:** https://tripod-web-one.vercel.app
+
+---
+
+## Stack
+
+- **Next.js** 16 App Router + Turbopack
+- **React** 19
+- **TypeScript** 5
+- **Tailwind CSS** 4 + shadcn/ui on Base UI
+- **next-intl** 4 — bilingual routing (NL default, EN secondary)
+- **Framer Motion** 12 — animated hero
+- **Vercel Analytics** + **PostHog** (env-gated, Phase 5)
+- **pnpm** 10 for package management
+
+---
+
+## Local development
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
+pnpm dev         # starts on http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Dev URL redirects `/` → `/nl`. Language switcher top-right toggles between NL and EN.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build & deploy
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+pnpm build       # production build
+pnpm start       # serve production build locally
 
-## Learn More
+vercel           # deploy preview to Vercel
+vercel --prod    # deploy to production
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Content sync from workspace
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The page copy lives in the **AIOS workspace** at `/Users/jsr2d2/Solid AIOS/AI Agency/aios-starter-kit/outputs/clients/construction/website/`. Before committing copy changes, sync into this repo:
 
-## Deploy on Vercel
+```bash
+pnpm sync:content
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This runs `scripts/sync-content.sh` which copies the Dutch master files into `content/`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Canonical source rule:** never edit copy in this repo first — always edit in the workspace, then sync, then commit.
+
+---
+
+## Portfolio photos
+
+Portfolio photos live in `public/images/portfolio/{slug}/`. The copy script at `scripts/copy-portfolio-photos.sh` picks the first 10 photos per project from the workspace's `context/import/tripod-photos/` folder.
+
+To re-sync photos after new uploads:
+
+```bash
+bash scripts/copy-portfolio-photos.sh
+```
+
+Structure:
+
+- `public/images/portfolio/celsiusstraat/` — Amsterdam Oud-West benedenwoning
+- `public/images/portfolio/crynssenstraat/` — Oud-West bovenwoning, signature bathroom
+- `public/images/portfolio/orteliusstraat/` — Oud-West benedenwoning
+- `public/images/portfolio/nieuwdammerdijk/` — Amsterdam Noord
+- `public/images/portfolio/zsw-haarlem/` — construction-progress shots (anonymised)
+- `public/images/portfolio/zsw-haarlem-plans/` — atelier MONA design renderings
+- `public/images/craftsmanship/` — homepage craft strip
+
+---
+
+## Project structure
+
+```
+tripod-web/
+├── i18n/                  — next-intl config (routing, request, navigation)
+├── messages/              — UI dictionaries (nl.json, en.json)
+├── content/               — Dutch master copy synced from workspace
+├── public/
+│   └── images/            — portfolio + craftsmanship photos (gitignored drop folder upstream)
+├── scripts/
+│   ├── sync-content.sh    — workspace → content/
+│   └── copy-portfolio-photos.sh
+└── src/
+    ├── app/
+    │   ├── [locale]/      — all page templates
+    │   ├── layout.tsx     — root layout (fonts, analytics, schema)
+    │   ├── sitemap.ts     — sitemap.xml
+    │   └── robots.ts      — robots.txt
+    ├── components/
+    │   ├── ui/            — shadcn primitives
+    │   └── {feature}.tsx  — hero, header, footer, gallery, etc
+    └── lib/
+        ├── content.ts     — MDX loader (for future use)
+        └── projects.ts    — 5 case studies (structured data)
+```
+
+---
+
+## Phase status
+
+| Phase | Scope | Status |
+|---|---|---|
+| 1 | Content vault (brand, voice, sitemap, 9 page copies) | Implemented (workspace) |
+| 2 | Next.js scaffold + 5 case studies + static deploy | **Implemented 2026-04-16** |
+| 3 | Quote calculator + Resend contact form | Not started |
+| 4 | EN translations + About + Team + FAQ content | Not started |
+| 5 | Blog + PostHog activation + DNS cutover | Not started |
+
+---
+
+## Important rules
+
+- **Silent-partner rule:** Julius (W.J.M. Brenninkmeijer) is a silent partner; never name him publicly. The public face is **Guus Merkx** (founder, aannemer, 20 years experience).
+- **ZSW anonymisation:** the ZSW Haarlem case study hides client + exact street.
+- **Architect consent:** atelier MONA confirmed their name + plans can be published.
+
+---
+
+## Environment variables
+
+See `.env.example`. For Phase 2 deploy, no secrets needed — Vercel Analytics is zero-config, PostHog stays disabled without env vars.
+
+Phase 3 adds `RESEND_API_KEY` + `CONTACT_INBOX`.
+Phase 5 adds `NEXT_PUBLIC_POSTHOG_KEY` + `NEXT_PUBLIC_POSTHOG_HOST`.
+
+---
+
+## Legal
+
+- **Tripod BV** — Willink van Collenstraat 7, 3621CK Breukelen
+- KVK: 97562777
+- BTW: NL868111983B01
+- Opgericht: 2025
+- Phone / WhatsApp: +31 6 1437 4866
+- Email: info@tripodbv.nl
