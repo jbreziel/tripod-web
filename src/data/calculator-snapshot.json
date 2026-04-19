@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-04-19",
+  "labor_profile": "Dutch CAO Charged",
+  "region": "Randstad",
+  "region_multiplier": 1.175,
+  "currency": "EUR",
+  "range_multiplier_low": 0.8,
+  "range_multiplier_high": 1.2,
+  "btw_standard": 0.21,
+  "round_step_fixed": 500,
+  "round_step_per_m2": 1000,
+  "overhead_pct": 12.0,
+  "contingency_pct": 10.0,
+  "fixed": {
+    "keuken": {
+      "low": 23100,
+      "mid": 29800,
+      "high": 40200,
+      "luxury": 96000
+    },
+    "badkamer": {
+      "low": 13900,
+      "mid": 16800,
+      "high": 30400,
+      "luxury": 41500
+    }
+  },
+  "per_m2": {
+    "volledige_renovatie": {
+      "low": 2185,
+      "mid": 2756,
+      "high": 3782,
+      "luxury": 5924
+    },
+    "uitbouw": {
+      "low": 2444,
+      "mid": 2998,
+      "high": 4247,
+      "luxury": 5897
+    }
+  },
+  "notes": "Medians ex. BTW, Randstad multiplier applied. The public calculator renders range = [median*0.8, median*1.2] rounded to the nearest 500 (fixed) or 1000 (per_m2). Volledige renovatie assumes 80 m² BVO reference; uitbouw assumes 15 m² reference. Regenerate quarterly or after /estimate --prices materially moves product prices."
+}

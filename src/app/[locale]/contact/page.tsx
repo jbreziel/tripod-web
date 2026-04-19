@@ -1,7 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "../../../../i18n/navigation";
 import { Section } from "@/components/section";
-import { ContactFormStatic } from "@/components/contact-form-static";
+import { ContactForm } from "@/components/contact-form";
 import { Phone, Mail, MessageCircle, MapPin } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -41,7 +41,7 @@ export default async function ContactPage({
             <h2 className="mb-6 font-serif text-2xl font-semibold text-[#1A1A1A]">
               Stuur ons een bericht.
             </h2>
-            <ContactFormStatic />
+            <ContactForm />
           </div>
 
           {/* Alternative channels */}

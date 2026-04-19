@@ -27,6 +27,7 @@ allowed=(
   "homepage-nl.md"
   "services-nl.md"
   "contact-nl.md"
+  "offerte-nl.md"
   "projects-willem-van-de-veldekade-nl.md"
   "projects-nieuwdammerdijk-nl.md"
   "projects-zsw-haarlem-nl.md"
