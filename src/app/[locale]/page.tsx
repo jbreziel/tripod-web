@@ -50,7 +50,7 @@ export default async function HomePage({
               </Link>
             </div>
           </div>
-          <div className="order-1 aspect-[5/3] w-full lg:order-2">
+          <div className="order-1 w-full lg:order-2">
             <AnimatedHero />
           </div>
         </div>

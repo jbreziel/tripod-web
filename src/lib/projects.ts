@@ -4,6 +4,8 @@
  * Dutch master copy is embedded here for Phase 2 rendering. The canonical source
  * lives in the workspace at outputs/clients/construction/website/projects-{slug}-nl.md
  * and is mirrored into content/ via scripts/sync-content.sh.
+ *
+ * Display order = portfolio order on /projecten and homepage teaser.
  */
 
 export type StatsItem = { label: string; value: string };
@@ -17,6 +19,8 @@ export type Project = {
   neighborhood: string;
   tagline: string;
   subtitle: string;
+  wip?: boolean;
+  videoUrl?: string;
   stats: StatsItem[];
   context: { heading: string; body: string[] };
   challenges?: { heading: string; intro: string; items: ChallengeItem[] };
@@ -33,32 +37,35 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "celsiusstraat",
-    title: "Renovatie Celsiusstraat 44-I",
-    neighborhood: "Amsterdam Oud-West",
-    tagline: "Celsiusstraat 44-I",
+    slug: "willem-van-de-veldekade",
+    title: "Renovatie Willem van de Veldekade",
+    neighborhood: "Heemstede",
+    tagline: "Willem van de Veldekade",
     subtitle:
-      "Volledige renovatie van een benedenwoning in Amsterdam Oud-West — met behoud van het karakter van de jaren-30 bouw.",
+      "Volledige renovatie van een tussenwoning in Heemstede — met een handgreeploze maatwerk keuken, complete badkamer, en vloeren die bij elke verdieping passen.",
+    videoUrl: "/videos/willem-van-de-veldekade.mp4",
     stats: [
       { label: "Type", value: "Volledige renovatie" },
-      { label: "Locatie", value: "Amsterdam Oud-West" },
-      { label: "Woningtype", value: "Jaren '30 benedenwoning" },
+      { label: "Locatie", value: "Heemstede" },
+      { label: "Woningtype", value: "Tussenwoning met tuin" },
       { label: "Tier", value: "Hoogwaardig" },
     ],
     context: {
-      heading: "Een karakteristieke benedenwoning, klaar voor de volgende generatie.",
+      heading: "Een tussenwoning in Heemstede, van fundering tot afwerking opnieuw opgebouwd.",
       body: [
-        "De Celsiusstraat in Oud-West heeft een heel eigen gelaagdheid: jaren-30 bouw met hoge plafonds, grote ramen, en vierkante meters die in de huidige markt zeldzaam zijn geworden. Deze benedenwoning was toe aan een complete update — installaties op hedendaags niveau, een keuken die past bij de schaal van de ruimte, een badkamer die functioneel èn esthetisch overeind blijft.",
-        "Onze opdracht: moderniseren zonder het karakter van het pand te verliezen. Hoge plafonds, oorspronkelijke details waar mogelijk behouden, nieuwe ingrepen die in dialoog staan met het bestaande werk.",
+        "Heemstede is een buurt waar huizen vaak een generatie lang in dezelfde familie blijven. Dat brengt een bepaalde verantwoordelijkheid mee voor een renovatie: het werk moet niet alleen nu goed zijn, het moet over twintig jaar nog steeds als vanzelfsprekend voelen. Deze tussenwoning — twee buren links en rechts, een tuin aan de achterzijde — kreeg een complete renovatie waarin precies die ambitie het uitgangspunt was.",
+        "De opdrachtgevers wilden geen opvallende renovatie. Ze wilden een huis dat klopt. Een keuken waarvan je elke dag opnieuw denkt dat hij goed is. Een badkamer die werkt als de rust van de ochtend. Materialen die mooier worden naarmate ze ouder worden. Dat vraagt om keuzes die niet zichtbaar zijn als je door de voordeur naar binnen loopt, maar die je voelt als je een week in huis woont.",
       ],
     },
     approach: {
       heading: "Wat we hebben gedaan.",
-      intro: "Ons eigen team heeft de volledige renovatie uitgevoerd — van strippen tot oplevering.",
+      intro: "Een volledige renovatie uitgevoerd door ons eigen team — van strip tot oplevering.",
       body: [
-        "Strip en voorbereiding, gevolgd door volledig nieuwe elektra en waterinstallatie afgestemd op de indeling. Stucwerk en plafonds: herstel waar mogelijk, nieuw waar nodig, met behoud van de oorspronkelijke detaillering.",
-        "In de leefruimte plaatsten we een maatwerk keuken met composiet werkblad en natuursteen-accent. De badkamer kreeg een complete renovatie met waterdichte afwerking, inbouwsanitair, en vloerverwarming. Eikenhouten planken door de hele woning in één looprichting; verwarming en ventilatie uitgebreid waar nuttig.",
-        "De oplevering verliep in fasen: keuken en badkamer eerst, daarna de rest van de afwerking — zodat de bewoners vanaf dag één praktisch konden wonen.",
+        "Volledig gestript naar de dragende constructie, oude installaties verwijderd, vloeren opengewerkt voor inspectie en nieuwe leidinginfrastructuur. Volledig nieuwe elektra en waterinstallatie, inclusief groepenkast, netwerk, en voorbereiding voor toekomstige zonnepanelen.",
+        "Vloeren in twee karakters: een strakke gietvloer op de begane grond, doorgevoerd zonder naden en geschikt voor vloerverwarming; massief eikenhouten vloeren op de eerste en tweede verdieping, gelegd in één looprichting. Eikenhout keert terug in de keuken als verbindend element tussen de verdiepingen.",
+        "De maatwerk keuken is handgreeploos — touchless bediening, geen zichtbare handgrepen of scharnieren. Fronten in eikenhout met vinyle afwerking voor kras- en vochtbestendigheid, een Corian werkblad dat onverschillig is voor hete pannen en dagelijkse slijtage, en inbouwapparatuur op tandem-niveau strak ingepast.",
+        "Complete badkamerrenovatie met natuursteen, inloopdouche met glaswerk, inbouwthermostaat, spiegelverlichting die de natuurlijke lichtinval ondersteunt, en vloerverwarming. Glad stucwerk in alle ruimtes, afgewerkt op het niveau dat past bij het eikenhout en de gietvloer. Kozijnen en binnendeuren vernieuwd waar nodig. Tuingerichte gevel opnieuw bekeken met oog voor licht en aansluiting tussen binnen en buiten. Energie-upgrade met isolatie, moderne installaties, warmtepomp-voorbereiding, en airco-units in de woonkamer en slaapkamers voor comfort in de warmere maanden.",
+        "Elk detail is handmatig afgesteld. De plinten lopen door zonder onderbreking. De voegen in de badkamer zijn millimeter-precies. De overgangen tussen ruimtes voelen niet als overgangen — ze voelen als één doorlopend geheel.",
       ],
     },
     outcome: {
@@ -71,115 +78,15 @@ export const projects: Project[] = [
       { title: "Badkamerrenovatie", body: "De complexste ruimte in het huis, als één geheel.", anchor: "badkamer" },
     ],
     cta: {
-      heading: "Een vergelijkbaar project in gedachten?",
-      body: "Iedere benedenwoning in Oud-West heeft zijn eigen karakter — en zijn eigen uitdagingen. Laten we kennismaken en bespreken wat haalbaar is in uw pand.",
+      heading: "Een huis dat kloppen moet — tot in de details?",
+      body: "Niet elke renovatie hoeft opvallend te zijn. De renovaties waarvan eigenaren twintig jaar later nog steeds tevreden zijn, zijn meestal de renovaties waarin elk detail een bewuste keuze was. Laten we kennismaken en bespreken wat haalbaar is in uw pand.",
     },
-    galleryFolder: "celsiusstraat",
+    galleryFolder: "willem-van-de-veldekade",
     galleryCount: 9,
     seo: {
-      title: "Renovatie Celsiusstraat Oud-West — volledige benedenwoningrenovatie",
+      title: "Renovatie Willem van de Veldekade Heemstede",
       description:
-        "Volledige renovatie van een jaren-30 benedenwoning in Amsterdam Oud-West. Keuken, badkamer, elektra, en afwerking — door Tripod BV.",
-    },
-  },
-  {
-    slug: "crynssenstraat",
-    title: "Renovatie Crynssenstraat 53-III",
-    neighborhood: "Amsterdam Oud-West",
-    tagline: "Crynssenstraat 53-III",
-    subtitle:
-      "Volledige renovatie van een bovenwoning op drie hoog in Amsterdam Oud-West — met bijzondere aandacht voor de badkamer-afwerking.",
-    stats: [
-      { label: "Type", value: "Volledige renovatie" },
-      { label: "Locatie", value: "Amsterdam Oud-West" },
-      { label: "Woningtype", value: "Bovenwoning 3e verd." },
-      { label: "Bijzonderheid", value: "Badkamer als kern" },
-    ],
-    context: {
-      heading: "Hoog in Oud-West, met één ruimte die de toon zet.",
-      body: [
-        "Crynssenstraat 53-III is een bovenwoning op de derde verdieping in een klassiek Amsterdams hoekpand. Licht, uitzicht, en vierkante meters die vragen om een indeling die even zorgvuldig is ontworpen als de bouw oorspronkelijk was.",
-        "De uitdaging van dit project was niet zozeer de schaal, maar de ambitie voor één specifieke ruimte: de badkamer. De opdrachtgever wilde een badkamer die niet voelde als een noodzakelijk onderdeel van het huis, maar als een van de mooiste plekken erin. Dat vraagt om precisiewerk: het tegelwerk moet perfect uitgelijnd zijn, de spiegel moet de ruimte dubbelen zonder dat het voelt als truc, het lichtwerk moet de natuurlijke lichtinval ondersteunen zonder te schreeuwen.",
-      ],
-    },
-    approach: {
-      heading: "Wat we hebben gedaan.",
-      intro: "Een volledige renovatie met een specifieke badkamerfocus:",
-      body: [
-        "Strip en complete leidinginfrastructuur vernieuwd, inclusief aangepaste riolering voor de nieuwe badkamer-indeling. Stucwerk, vloeren, elektra, en afwerking in alle leef- en slaapruimtes.",
-        "Nieuwe keuken met composiet werkblad, afgestemd op de schaal van de woning. En dan de badkamer: natuursteen-tegels, spiegelwand, inloopdouche met glaswerk, inbouwthermostaat, vloerverwarming, ambient verlichting. Elk detail handmatig afgesteld.",
-        "Kozijnen, plinten, en binnendeuren zijn consistent door de hele woning doorgevoerd. De badkamer is het moment waarvoor mensen binnenkomen en blijven kijken — dat is geen toeval, dat is het resultaat van een ontwerp dat eerst is vastgelegd in millimeters.",
-      ],
-    },
-    outcome: {
-      heading: "",
-      body: [],
-    },
-    related: [
-      { title: "Badkamerrenovatie", body: "De complexste ruimte in het huis, als één geheel.", anchor: "badkamer" },
-      { title: "Volledige woningrenovatie", body: "Van grondige renovatie tot complete herbestemming.", anchor: "volledige-renovatie" },
-      { title: "Keukenrenovatie", body: "Van strip tot opleveringsklaar, eigen team.", anchor: "keuken" },
-    ],
-    cta: {
-      heading: "Een badkamer die de toon zet voor het hele huis?",
-      body: "Niet elke badkamer hoeft een showstopper te zijn — maar als dat wel uw ambitie is, weten we precies waar we de meeste tijd in moeten steken. Laten we kennismaken.",
-    },
-    galleryFolder: "crynssenstraat",
-    galleryCount: 9,
-    seo: {
-      title: "Renovatie Crynssenstraat Oud-West — met designer badkamer",
-      description:
-        "Volledige renovatie van een bovenwoning in Amsterdam Oud-West met een hoogwaardige badkamer als centraal element. Door Tripod BV.",
-    },
-  },
-  {
-    slug: "orteliusstraat",
-    title: "Renovatie Orteliusstraat 72 hs",
-    neighborhood: "Amsterdam Oud-West",
-    tagline: "Orteliusstraat 72 hs",
-    subtitle:
-      "Complete renovatie van een benedenwoning in Amsterdam Oud-West — warm, functioneel, en afgewerkt met oog voor details.",
-    stats: [
-      { label: "Type", value: "Volledige renovatie" },
-      { label: "Locatie", value: "Amsterdam Oud-West" },
-      { label: "Woningtype", value: "Benedenwoning" },
-      { label: "Tier", value: "Midden–Hoogwaardig" },
-    ],
-    context: {
-      heading: "Een Amsterdamse benedenwoning die weer voelt als nieuw.",
-      body: [
-        "Orteliusstraat 72 hs is een typische Oud-West benedenwoning: compact waar het moet, ruim waar het kan. De opdrachtgever wilde een huis dat elke dag werkt — geen prestige-renovatie, maar een bewuste keuze voor kwaliteit die twintig jaar meegaat zonder dat er iets rammelt of knarst.",
-        "Dat vraagt om pragmatische keuzes op het juiste niveau: materialen die slijtage kunnen hebben, installaties die nauwelijks onderhoud vragen, en afwerking die nog steeds goed is als de mode drie keer is doorgelopen.",
-      ],
-    },
-    approach: {
-      heading: "Wat we hebben gedaan.",
-      intro: "",
-      body: [
-        "Strip en volledig nieuwe elektra en waterinstallatie, aangepast aan de nieuwe indeling. Praktische keuken met werkblad dat bestand is tegen dagelijks gebruik. Complete badkamerrenovatie met duurzame tegels, betrouwbaar sanitair, en waterdichte afwerking.",
-        "Eén doorlopende vloer door de leefruimtes voor ruimtelijk gevoel. Stucwerk, schilderwerk, plinten, binnendeuren — allemaal op hetzelfde niveau. Bestaande CV uitgebreid, vloerverwarming in de leefruimtes.",
-        "Geen dramatische ingrepen, geen opvallende statement-elementen. Precies dat maakt het een plek die functioneert zoals een huis moet functioneren: zonder dat je er elke dag over hoeft na te denken.",
-      ],
-    },
-    outcome: {
-      heading: "",
-      body: [],
-    },
-    related: [
-      { title: "Volledige woningrenovatie", body: "Van grondige renovatie tot complete herbestemming.", anchor: "volledige-renovatie" },
-      { title: "Keukenrenovatie", body: "Van strip tot opleveringsklaar, eigen team.", anchor: "keuken" },
-      { title: "Badkamerrenovatie", body: "De complexste ruimte in het huis, als één geheel.", anchor: "badkamer" },
-    ],
-    cta: {
-      heading: "Een renovatie die gewoon werkt?",
-      body: 'Niet elk project hoeft een architectonisch statement te zijn. Voor veel huiseigenaren is "goed, duurzaam, en klopt op elk detail" de grootste ambitie — en dat is precies waar we goed in zijn. Laten we kennismaken.',
-    },
-    galleryFolder: "orteliusstraat",
-    galleryCount: 9,
-    seo: {
-      title: "Renovatie Orteliusstraat Oud-West — complete benedenwoning",
-      description:
-        "Complete renovatie van een benedenwoning in Amsterdam Oud-West. Pragmatisch, duurzaam afgewerkt, uitgevoerd door Tripod BV.",
+        "Volledige renovatie van een tussenwoning in Heemstede — handgreeploze keuken met Corian werkblad, gietvloer en eikenhout, complete badkamer. Door Tripod BV.",
     },
   },
   {
@@ -238,7 +145,8 @@ export const projects: Project[] = [
     neighborhood: "Haarlem",
     tagline: "Boerderijrenovatie Haarlem",
     subtitle:
-      "Een bestaande boerderij in Haarlem, oorspronkelijk 385 m² en één geheel, omgebouwd en uitgebreid tot twee zelfstandige woningen.",
+      "Een bestaande boerderij in Haarlem, oorspronkelijk 385 m² en één geheel, omgebouwd en uitgebreid tot twee zelfstandige woningen. Dit project is momenteel in uitvoering.",
+    wip: true,
     stats: [
       { label: "Type", value: "Renovatie + splitsing" },
       { label: "Totaal BVO", value: "633 m²" },
@@ -249,39 +157,39 @@ export const projects: Project[] = [
       heading: "Eén boerderij, twee woningen.",
       body: [
         "De uitdaging begon met een vraagstuk dat in de Randstad steeds vaker terugkomt: hoe maak je van één historisch pand twee toekomstbestendige woningen zonder het karakter te verliezen?",
-        "De bestaande boerderij in Haarlem — een traditioneel masonry-pand met één beganegrondlaag en één verdieping — is opgesplitst in twee zelfstandige woningen van ongeveer 250 m² elk. Het ontwerp is van atelier MONA in Haarlem. Tripod BV is als hoofdaannemer verantwoordelijk voor de volledige bouwkundige uitvoering: sloopwerk, constructie, installaties, afwerking, en oplevering.",
-        "Het project is uitgevoerd in middenklasse-kwaliteit met luxe afwerking in sleutelruimtes — een keuze die past bij de ambitie om beide woningen aantrekkelijk te houden voor kwaliteitsbewuste huiseigenaren, zonder door te schieten naar maatwerk dat op elke vierkante meter terugverdiend moet worden.",
+        "De bestaande boerderij in Haarlem — een traditioneel masonry-pand met één beganegrondlaag en één verdieping — wordt opgesplitst in twee zelfstandige woningen van ongeveer 250 m² elk. Het ontwerp is van atelier MONA in Haarlem. Tripod BV is als hoofdaannemer verantwoordelijk voor de volledige bouwkundige uitvoering: sloopwerk, constructie, installaties, afwerking, en oplevering.",
+        "Het project wordt uitgevoerd in middenklasse-kwaliteit met luxe afwerking in sleutelruimtes — een keuze die past bij de ambitie om beide woningen aantrekkelijk te houden voor kwaliteitsbewuste huiseigenaren, zonder door te schieten naar maatwerk dat op elke vierkante meter terugverdiend moet worden.",
       ],
     },
     challenges: {
-      heading: "Wat het project bouwkundig complex maakte.",
+      heading: "Wat het project bouwkundig complex maakt.",
       intro: "Een boerderij splitsen klinkt eenvoudig, maar in de uitvoering stapelen de keuzes zich op.",
       items: [
         {
           number: "01",
           title: "Masonry behouden, staal integreren",
-          body: "De bestaande muren — traditioneel Hollands metselwerk — zijn het karakter van het pand. Tegelijkertijd vroeg de splitsing om grote openingen en nieuwe draagstructuren. Onze oplossing: een staalconstructie met HEB 220 hoofdliggers en HEA 140 secundaire liggers, zorgvuldig ingebouwd in het bestaande metselwerk, aangevuld met massieve houtconstructies om de warmte van het origineel te behouden.",
+          body: "De bestaande muren — traditioneel Hollands metselwerk — zijn het karakter van het pand. Tegelijkertijd vraagt de splitsing om grote openingen en nieuwe draagstructuren. Onze oplossing: een staalconstructie met HEB 220 hoofdliggers en HEA 140 secundaire liggers, zorgvuldig ingebouwd in het bestaande metselwerk, aangevuld met massieve houtconstructies om de warmte van het origineel te behouden.",
         },
         {
           number: "02",
           title: "BVO en GO per woning gezond uitbalanceren",
-          body: "Elke woning moest als zelfstandig verhuurbaar / verkoopbaar object functioneren. Dat betekent: eigen entree, eigen meterkast, eigen installatietechniek, en een logische verdeling conform NEN 2580. In nauwe samenwerking met atelier MONA kwamen we per woning tot respectievelijk 295 m² BVO / 211 m² GO en 338 m² BVO / 272 m² GO.",
+          body: "Elke woning moet als zelfstandig verhuurbaar / verkoopbaar object functioneren. Dat betekent: eigen entree, eigen meterkast, eigen installatietechniek, en een logische verdeling conform NEN 2580. In nauwe samenwerking met atelier MONA komen we per woning tot respectievelijk 295 m² BVO / 211 m² GO en 338 m² BVO / 272 m² GO.",
         },
         {
           number: "03",
           title: "Energie-upgrade binnen de monumentale schil",
-          body: "Het pand moest voldoen aan moderne energie-eisen zonder dat het karakter werd opgeofferd. Dat betekende: warmtepomp-installatie, WTW-ventilatie, uitgebreide gevelisolatie aan de binnenzijde, en zorgvuldige detaillering rondom kozijnen om koudebruggen te voorkomen.",
+          body: "Het pand moet voldoen aan moderne energie-eisen zonder dat het karakter wordt opgeofferd. Dat betekent: warmtepomp-installatie, WTW-ventilatie, uitgebreide gevelisolatie aan de binnenzijde, en zorgvuldige detaillering rondom kozijnen om koudebruggen te voorkomen.",
         },
       ],
     },
     design: {
       heading: "Het ontwerp van atelier MONA.",
-      body: 'Het ontwerp voor beide woningen is gemaakt door atelier MONA in Haarlem. Hun tekeningen — plattegronden, gevelaanzichten, en detail-impressies — waren de basis waarop onze uitvoering is gebouwd. Hieronder een selectie uit het Definitief Ontwerp dat we gezamenlijk hebben uitgewerkt.',
+      body: 'Het ontwerp voor beide woningen is gemaakt door atelier MONA in Haarlem. Hun tekeningen — plattegronden, gevelaanzichten, en detail-impressies — zijn de basis waarop onze uitvoering is gebouwd. Hieronder een selectie uit het Definitief Ontwerp dat we gezamenlijk hebben uitgewerkt.',
       gallery: "zsw-haarlem-plans",
     },
     approach: {
-      heading: "Hoe we het hebben aangepakt.",
-      intro: "Dit soort project vraagt om strakke coördinatie. Wij voerden het uit in vier fasen, steeds met Tripod als hoofdaannemer en ons eigen team op de werf.",
+      heading: "Hoe we het aanpakken.",
+      intro: "Dit soort project vraagt om strakke coördinatie. Wij voeren het uit in vier fasen, steeds met Tripod als hoofdaannemer en ons eigen team op de werf.",
       phases: [
         {
           phase: "Fase 1",
@@ -306,9 +214,9 @@ export const projects: Project[] = [
       ],
     },
     scope: {
-      heading: "Wat er in de praktijk gebeurd is — per onderdeel.",
+      heading: "Wat er in de praktijk gebeurt — per onderdeel.",
       intro:
-        "Elke post hieronder is onderdeel van onze offerte geweest en uitgevoerd door ons eigen team of een zorgvuldig geselecteerde onderaannemer voor specialistische onderdelen.",
+        "Elke post hieronder is onderdeel van onze offerte en wordt uitgevoerd door ons eigen team of een zorgvuldig geselecteerde onderaannemer voor specialistische onderdelen.",
       items: [
         "Sloopwerk — selectieve demontage, grondwerk",
         "Fundering — inspectie, lokaal herstel, aanvulling waar nodig",
@@ -333,10 +241,11 @@ export const projects: Project[] = [
       ],
     },
     outcome: {
-      heading: "Wat er nu staat.",
+      heading: "Wat er komt te staan.",
       body: [
-        "Twee zelfstandige woningen in een pand dat er altijd één was — en dat zo moet blijven voelen. Beide woningen hebben hun eigen karakter: een ingetogen hoofdmaterialenpalet (metselwerk, eikenhout, natuursteen in de keukens en badkamers), warme natuurlijke lichtinval door de grote nieuwe kozijnen, en een energiehuishouding die klaar is voor de volgende twintig jaar.",
-        "Het onderscheid tussen oud en nieuw is zichtbaar maar niet conflicterend. Waar we nieuwe staalliggers hebben ingebouwd, lopen ze zonder verstoring door het bestaande metselwerk. De keuken van beide woningen heeft ruimte voor maatwerk zonder dat de uitbouw zelf als aparte ruimte voelt. Bovenal: beide woningen voelen groot zonder leeg te zijn — een balans die bij veel splitsingen verloren gaat.",
+        "Twee zelfstandige woningen in een pand dat er altijd één was — en dat zo moet blijven voelen. Beide woningen krijgen hun eigen karakter: een ingetogen hoofdmaterialenpalet (metselwerk, eikenhout, natuursteen in de keukens en badkamers), warme natuurlijke lichtinval door de grote nieuwe kozijnen, en een energiehuishouding die klaar is voor de volgende twintig jaar.",
+        "Het onderscheid tussen oud en nieuw blijft zichtbaar maar niet conflicterend. Waar we nieuwe staalliggers inbouwen, lopen ze zonder verstoring door het bestaande metselwerk. De keuken van beide woningen krijgt ruimte voor maatwerk zonder dat de uitbouw zelf als aparte ruimte voelt. Bovenal: beide woningen moeten groot voelen zonder leeg te zijn — een balans die bij veel splitsingen verloren gaat.",
+        "Na oplevering volgt een professionele fotoshoot en wordt deze case study aangevuld met eindfoto's.",
       ],
       stats: [
         { label: "Bouwtijd", value: "~30 weken" },
@@ -359,7 +268,105 @@ export const projects: Project[] = [
     seo: {
       title: "Boerderijrenovatie Haarlem — 385 m² boerderij gesplitst in twee woningen",
       description:
-        "Een bestaande boerderij in Haarlem, omgebouwd tot twee zelfstandige woningen. Staalconstructie in bestaand metselwerk, warmtepomp-installatie, volledige afwerking — door Tripod BV.",
+        "Een bestaande boerderij in Haarlem, omgebouwd tot twee zelfstandige woningen. Staalconstructie in bestaand metselwerk, warmtepomp-installatie, volledige afwerking — door Tripod BV. Momenteel in uitvoering.",
+    },
+  },
+  {
+    slug: "crynssenstraat",
+    title: "Renovatie Crynssenstraat",
+    neighborhood: "Amsterdam Oud-West",
+    tagline: "Crynssenstraat",
+    subtitle:
+      "Volledige renovatie van een bovenwoning op drie hoog in Amsterdam Oud-West — een compact huis met karakter, goed gemaakt van begin tot eind.",
+    stats: [
+      { label: "Type", value: "Volledige renovatie" },
+      { label: "Locatie", value: "Amsterdam Oud-West" },
+      { label: "Woningtype", value: "Bovenwoning 3e verd." },
+      { label: "Tier", value: "Midden–Hoogwaardig" },
+    ],
+    context: {
+      heading: "Een compacte bovenwoning in Oud-West, volledig gerenoveerd.",
+      body: [
+        "Crynssenstraat is een bovenwoning op de derde verdieping in een klassiek Amsterdams hoekpand. Licht, uitzicht, en vierkante meters die vragen om een indeling die zorgvuldig is ontworpen.",
+        "De opdracht: een complete renovatie van een compact huis — nieuwe keuken, nieuwe vloer, nieuwe installaties, met oog voor detail en zonder onnodige franje. Een huis dat elke dag werkt.",
+      ],
+    },
+    approach: {
+      heading: "Wat we hebben gedaan.",
+      intro: "",
+      body: [
+        "Strip en complete leidinginfrastructuur vernieuwd. Stucwerk, vloeren, elektra, en afwerking in alle leef- en slaapruimtes.",
+        "Nieuwe keuken met composiet werkblad, afgestemd op de schaal van de woning. Badkamer gerenoveerd. Kozijnen, plinten, en binnendeuren consistent door de hele woning doorgevoerd.",
+      ],
+    },
+    outcome: {
+      heading: "",
+      body: [],
+    },
+    related: [
+      { title: "Volledige woningrenovatie", body: "Van grondige renovatie tot complete herbestemming.", anchor: "volledige-renovatie" },
+      { title: "Keukenrenovatie", body: "Van strip tot opleveringsklaar, eigen team.", anchor: "keuken" },
+      { title: "Badkamerrenovatie", body: "De complexste ruimte in het huis, als één geheel.", anchor: "badkamer" },
+    ],
+    cta: {
+      heading: "Een compacte renovatie die klopt op elk detail?",
+      body: "Een klein huis goed maken vraagt dezelfde zorg als een groot huis goed maken. Laten we kennismaken en bespreken wat haalbaar is in uw pand.",
+    },
+    galleryFolder: "crynssenstraat",
+    galleryCount: 9,
+    seo: {
+      title: "Renovatie Crynssenstraat Oud-West — complete bovenwoning",
+      description:
+        "Volledige renovatie van een bovenwoning in Amsterdam Oud-West — keuken, vloer, installaties, afwerking. Door Tripod BV.",
+    },
+  },
+  {
+    slug: "orteliusstraat",
+    title: "Renovatie Orteliusstraat",
+    neighborhood: "Amsterdam Oud-West",
+    tagline: "Orteliusstraat",
+    subtitle:
+      "Complete renovatie van een benedenwoning in Amsterdam Oud-West — warm, functioneel, en afgewerkt met oog voor details.",
+    stats: [
+      { label: "Type", value: "Volledige renovatie" },
+      { label: "Locatie", value: "Amsterdam Oud-West" },
+      { label: "Woningtype", value: "Benedenwoning" },
+      { label: "Tier", value: "Midden–Hoogwaardig" },
+    ],
+    context: {
+      heading: "Een Amsterdamse benedenwoning die weer voelt als nieuw.",
+      body: [
+        "Orteliusstraat is een typische Oud-West benedenwoning: compact waar het moet, ruim waar het kan. De opdrachtgever wilde een huis dat elke dag werkt — een bewuste keuze voor kwaliteit die twintig jaar meegaat zonder dat er iets rammelt of knarst.",
+        "De best gefotografeerde ruimte van dit project is de badkamer — een complete renovatie met waterdichte afwerking, duurzame tegels, en sanitair dat past bij de rest van het huis.",
+      ],
+    },
+    approach: {
+      heading: "Wat we hebben gedaan.",
+      intro: "",
+      body: [
+        "Strip en volledig nieuwe elektra en waterinstallatie, aangepast aan de nieuwe indeling. Praktische keuken met werkblad dat bestand is tegen dagelijks gebruik. Complete badkamerrenovatie met duurzame tegels, betrouwbaar sanitair, en waterdichte afwerking.",
+        "Eén doorlopende vloer door de leefruimtes voor ruimtelijk gevoel. Stucwerk, schilderwerk, plinten, binnendeuren — allemaal op hetzelfde niveau. Bestaande CV uitgebreid, vloerverwarming in de leefruimtes.",
+      ],
+    },
+    outcome: {
+      heading: "",
+      body: [],
+    },
+    related: [
+      { title: "Volledige woningrenovatie", body: "Van grondige renovatie tot complete herbestemming.", anchor: "volledige-renovatie" },
+      { title: "Badkamerrenovatie", body: "De complexste ruimte in het huis, als één geheel.", anchor: "badkamer" },
+      { title: "Keukenrenovatie", body: "Van strip tot opleveringsklaar, eigen team.", anchor: "keuken" },
+    ],
+    cta: {
+      heading: "Een renovatie die gewoon werkt?",
+      body: 'Niet elk project hoeft een architectonisch statement te zijn. Voor veel huiseigenaren is "goed, duurzaam, en klopt op elk detail" de grootste ambitie — en dat is precies waar we goed in zijn. Laten we kennismaken.',
+    },
+    galleryFolder: "orteliusstraat",
+    galleryCount: 9,
+    seo: {
+      title: "Renovatie Orteliusstraat Oud-West — complete benedenwoning",
+      description:
+        "Complete renovatie van een benedenwoning in Amsterdam Oud-West. Pragmatisch, duurzaam afgewerkt, uitgevoerd door Tripod BV.",
     },
   },
 ];

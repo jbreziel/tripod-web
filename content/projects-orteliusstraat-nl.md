@@ -1,24 +1,24 @@
 # Tripod BV — Projectpagina: Renovatie Orteliusstraat — Oud-West (NL)
 
-> Dutch master copy for `/projecten/orteliusstraat`. Full renovation in Amsterdam Oud-West. Client consent confirmed 2026-04-16.
+> Dutch master copy for `/projecten/orteliusstraat`. Complete renovatie van een benedenwoning in Amsterdam Oud-West. **Photo-dump template** — kortere body copy, galerij leidt het verhaal. Best-photographed ruimte op dit project is de badkamer (gallery focus). Client consent confirmed 2026-04-16.
 
 ---
 
 ## Section 1: Project hero
 
-**Visual:** Strongest wide shot from the 19 Orteliusstraat photos.
+**Visual:** De **badkamer** (wide shot) of een warm living-room shot — whichever is sterkst in de beschikbare fotografie. De badkamer is hier de sterkste ruimte.
 
 **Project title (H1):**
-Renovatie Orteliusstraat 72 hs.
+Renovatie Orteliusstraat.
 
 **Subtitle (Body L, slate):**
 Complete renovatie van een benedenwoning in Amsterdam Oud-West — warm, functioneel, en afgewerkt met oog voor details.
 
 **Key stats box:**
 
-| Type | Locatie | Woningtype | Kwaliteitsklasse |
+| Type | Locatie | Woningtype | Tier |
 |---|---|---|---|
-| Volledige woningrenovatie | Amsterdam Oud-West | Benedenwoning | Middenklasse–Hoogwaardig |
+| Volledige woningrenovatie | Amsterdam Oud-West | Benedenwoning | Midden–Hoogwaardig |
 
 ---
 
@@ -29,9 +29,9 @@ Een Amsterdamse benedenwoning die weer voelt als nieuw.
 
 **Body:**
 
-Orteliusstraat 72 hs is een typische Oud-West benedenwoning: compact waar het moet, ruim waar het kan. De opdrachtgever wilde een huis dat elke dag werkt — geen prestige-renovatie, maar een bewuste keuze voor kwaliteit die twintig jaar meegaat zonder dat er iets rammelt of knarst.
+Orteliusstraat is een typische Oud-West benedenwoning: compact waar het moet, ruim waar het kan. De opdrachtgever wilde een huis dat elke dag werkt — een bewuste keuze voor kwaliteit die twintig jaar meegaat zonder dat er iets rammelt of knarst.
 
-Dat vraagt om pragmatische keuzes op het juiste niveau: materialen die slijtage kunnen hebben, installaties die nauwelijks onderhoud vragen, en afwerking die nog steeds goed is als de mode drie keer is doorgelopen.
+De best gefotografeerde ruimte van dit project is de badkamer — een complete renovatie met waterdichte afwerking, duurzame tegels, en sanitair dat past bij de rest van het huis.
 
 ---
 
@@ -42,29 +42,30 @@ Wat we hebben gedaan.
 
 **Body:**
 
-- **Strip en leidingwerk** — volledig nieuwe elektra en waterinstallatie, aangepast aan de nieuwe indeling
-- **Keuken** — praktische keuken met werkblad dat bestand is tegen dagelijks gebruik
-- **Badkamer** — complete renovatie met duurzame tegels, betrouwbaar sanitair, en waterdichte afwerking
-- **Vloeren** — één doorlopende vloer door de leefruimtes voor ruimtelijk gevoel
-- **Afwerking** — stucwerk, schilderwerk, plinten, binnendeuren — allemaal op hetzelfde niveau
-- **Verwarming** — bestaande CV uitgebreid, vloerverwarming in de leefruimtes
+Strip en volledig nieuwe elektra en waterinstallatie, aangepast aan de nieuwe indeling. Praktische keuken met werkblad dat bestand is tegen dagelijks gebruik. Complete badkamerrenovatie met duurzame tegels, betrouwbaar sanitair, en waterdichte afwerking.
 
-Geen dramatische ingrepen, geen opvallende statement-elementen. Precies dat maakt het een plek die functioneert zoals een huis moet functioneren: zonder dat je er elke dag over hoeft na te denken.
+Eén doorlopende vloer door de leefruimtes voor ruimtelijk gevoel. Stucwerk, schilderwerk, plinten, binnendeuren — allemaal op hetzelfde niveau. Bestaande CV uitgebreid, vloerverwarming in de leefruimtes.
 
 ---
 
 ## Section 4: Fotogalerij
 
-**Visual:** 6–9 curated photos from the 19-shot set.
+**Visual:** 9 curated photos (photo-dump template — gallery carries the page). Leid de galerij met 2-3 bathroom shots.
 
 **Suggested curation:**
-- 1 wide establishing shot (living room or open space)
+- 1–2 bathroom shots (wide + detail)
 - 1 kitchen shot
-- 1 bathroom shot
-- 1–2 bedroom/slaapkamer shots
-- 2–3 craftsmanship details
+- 1 kitchen detail
+- 1 leefruimte shot met doorlopende vloer
+- 1 overgang shot
+- 1 slaapkamer
+- 1 detail (plint, kozijn, binnendeur)
+- 1 exterior of wider context
 
-**Video slider:** `Slider.mp4` evaluation at curation.
+**Design notes:**
+- Photo-dump layout — larger gallery block, shorter body above
+- Grid, 3 cols desktop / 1 col mobile
+- Lightbox on click
 
 ---
 
@@ -73,8 +74,8 @@ Geen dramatische ingrepen, geen opvallende statement-elementen. Precies dat maak
 **Three cards:**
 
 1. **Volledige woningrenovatie** — → `/diensten#volledige-renovatie`
-2. **Keukenrenovatie** — → `/diensten#keuken`
-3. **Badkamerrenovatie** — → `/diensten#badkamer`
+2. **Badkamerrenovatie** — → `/diensten#badkamer`
+3. **Keukenrenovatie** — → `/diensten#keuken`
 
 ---
 
@@ -102,7 +103,7 @@ Complete renovatie van een benedenwoning in Amsterdam Oud-West. Pragmatisch, duu
 **Canonical:** `https://tripodbv.nl/projecten/orteliusstraat`
 **hreflang:** `nl` → `/projecten/orteliusstraat`, `en` → `/en/projects/orteliusstraat`
 
-**OG image:** Project hero shot.
+**OG image:** Project hero shot (bathroom or living-room wide).
 
 **Schema.org:** `CreativeWork` markup.
 
@@ -110,6 +111,6 @@ Complete renovatie van een benedenwoning in Amsterdam Oud-West. Pragmatisch, duu
 
 ## Copy Review Notes
 
-- Positioning: this project is the "it just works" case — not headline-grabbing, but demonstrates Tripod's pragmatic quality side. Useful for converting cost-conscious visitors.
-- Consent confirmed, standard publication conventions apply.
-- The single bathroom photo in `context/import/tripod-photos/bathrooms/` is labelled `Orteliusstraat 72 HS (15).jpg` — likely a duplicate from this project's set. Dedupe during photo curation.
+- **Reposition note (2026-04-18):** Bathroom is acknowledged as the standout photographed ruimte of this project. BUT sitewide bathroom hero imagery (homepage, services page) comes exclusively from Willem van de Veldekade / Nieuwdammerdijk — not from here. The Orteliusstraat bathroom lives on this case study page only.
+- Photo-dump template — keep body copy brief, let the gallery do the work.
+- Consent confirmed, street address acceptable.

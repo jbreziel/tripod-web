@@ -1,37 +1,37 @@
 # Tripod BV — Projectpagina: Renovatie Crynssenstraat — Oud-West (NL)
 
-> Dutch master copy for `/projecten/crynssenstraat`. Full renovation in Amsterdam Oud-West, with a notable bathroom detail. Client consent confirmed 2026-04-16.
+> Dutch master copy for `/projecten/crynssenstraat`. Complete renovatie van een compacte bovenwoning in Amsterdam Oud-West. **Photo-dump template** — kortere body copy, galerij leidt het verhaal. Client consent confirmed 2026-04-16.
 
 ---
 
 ## Section 1: Project hero
 
-**Visual:** Strongest wide shot from the 30 Crynssenstraat photos. Preferably the main living space or a striking bathroom angle.
+**Visual:** Strongest wide kitchen shot OR wide leefruimte shot. Geen bathroom-hero — bathroom photography is niet de sterkte van dit project.
 
 **Project title (H1):**
-Renovatie Crynssenstraat 53-III.
+Renovatie Crynssenstraat.
 
 **Subtitle (Body L, slate):**
-Volledige renovatie van een bovenwoning op drie hoog in Amsterdam Oud-West — met bijzondere aandacht voor de badkamer-afwerking.
+Volledige renovatie van een bovenwoning op drie hoog in Amsterdam Oud-West — een compact huis met karakter, goed gemaakt van begin tot eind.
 
 **Key stats box:**
 
-| Type | Locatie | Woningtype | Bijzonderheid |
+| Type | Locatie | Woningtype | Tier |
 |---|---|---|---|
-| Volledige woningrenovatie | Amsterdam Oud-West | Bovenwoning, 3e verdieping | Badkamer als kernmoment |
+| Volledige woningrenovatie | Amsterdam Oud-West | Bovenwoning, 3e verdieping | Midden–Hoogwaardig |
 
 ---
 
 ## Section 2: Context
 
 **Headline (H2):**
-Hoog in Oud-West, met één ruimte die de toon zet.
+Een compacte bovenwoning in Oud-West, volledig gerenoveerd.
 
 **Body:**
 
-Crynssenstraat 53-III is een bovenwoning op de derde verdieping in een klassiek Amsterdams hoekpand. Licht, uitzicht, en vierkante meters die vragen om een indeling die even zorgvuldig is ontworpen als de bouw oorspronkelijk was.
+Crynssenstraat is een bovenwoning op de derde verdieping in een klassiek Amsterdams hoekpand. Licht, uitzicht, en vierkante meters die vragen om een indeling die zorgvuldig is ontworpen.
 
-De uitdaging van dit project was niet zozeer de schaal — het is een woning van normaal formaat — maar de ambitie voor één specifieke ruimte: de badkamer. De opdrachtgever wilde een badkamer die niet voelde als een noodzakelijk onderdeel van het huis, maar als een van de mooiste plekken erin. Dat vraagt om precisiewerk: het tegelwerk moet perfect uitgelijnd zijn, de spiegel moet de ruimte dubbelen zonder dat het voelt als truc, het lichtwerk moet de natuurlijke lichtinval ondersteunen zonder te schreeuwen.
+De opdracht: een complete renovatie van een compact huis — nieuwe keuken, nieuwe vloer, nieuwe installaties, met oog voor detail en zonder onnodige franje. Een huis dat elke dag werkt.
 
 ---
 
@@ -42,35 +42,30 @@ Wat we hebben gedaan.
 
 **Body:**
 
-Een volledige renovatie met een specifieke badkamerfocus:
+Strip en complete leidinginfrastructuur vernieuwd. Stucwerk, vloeren, elektra, en afwerking in alle leef- en slaapruimtes.
 
-- **Strip en leidingwerk** — complete leidinginfrastructuur vernieuwd, aangepaste riolering voor de nieuwe badkamer-indeling
-- **Hoofdruimtes** — stucwerk, vloeren, elektra, en afwerking in leefruimtes en slaapkamers
-- **Keuken** — nieuwe keuken met composiet werkblad, afgestemd op de schaal van de woning
-- **Badkamer** — hier is het echte werk: natuursteen-tegels, spiegelwand, inloopdouche met glaswerk, inbouwthermostaat, vloerverwarming, ambient verlichting. Elk detail handmatig afgesteld.
-- **Afwerking** — kozijnen, plinten, binnendeuren — consistent door de hele woning
-
-De badkamer is het moment waarvoor mensen binnenkomen en blijven kijken. Dat is geen toeval — dat is het resultaat van een ontwerp dat eerst is vastgelegd in millimeters, daarna is uitgevoerd met hetzelfde detailniveau.
+Nieuwe keuken met composiet werkblad, afgestemd op de schaal van de woning. Badkamer gerenoveerd. Kozijnen, plinten, en binnendeuren consistent door de hele woning doorgevoerd.
 
 ---
 
 ## Section 4: Fotogalerij
 
-**Visual:** 8–12 curated photos. The bathroom subfolder (`Badkamer met spiegel/`) deserves its own cluster in the gallery.
+**Visual:** 9 curated photos (photo-dump template — gallery carries the page).
 
 **Suggested curation:**
-- 1–2 wide establishing shots (living space, entrance)
-- 2 kitchen shots
-- 2 bedroom / general space shots
-- **3–4 bathroom shots** (mirror detail, tile work, fixtures) — this is the signature room
-- 1–2 craftsmanship close-ups
+- 1 wide kitchen shot
+- 1 kitchen detail
+- 2 leefruimte shots waar de vloer doorloopt
+- 1 hallway / overgang shot
+- 1 slaapkamer
+- 1 detail (plint, kozijn, binnendeur)
+- 1 bathroom shot (if available)
+- 1 exterior of wider context
 
 **Design notes:**
-- Grid layout, 3 cols desktop / 1 col mobile
+- Photo-dump layout — larger gallery block, shorter body above
+- Grid, 3 cols desktop / 1 col mobile
 - Lightbox on click
-- Bathroom cluster can be visually grouped (e.g. grid spacing slightly tighter for those 3–4 photos)
-
-**Video slider:** `slider.mp4` can be evaluated at curation time — embed if quality matches stills.
 
 ---
 
@@ -78,19 +73,19 @@ De badkamer is het moment waarvoor mensen binnenkomen en blijven kijken. Dat is 
 
 **Three cards:**
 
-1. **Badkamerrenovatie** — "De complexste ruimte in het huis, als één geheel." → `/diensten#badkamer`
-2. **Volledige woningrenovatie** — → `/diensten#volledige-renovatie`
-3. **Keukenrenovatie** — → `/diensten#keuken`
+1. **Volledige woningrenovatie** — → `/diensten#volledige-renovatie`
+2. **Keukenrenovatie** — → `/diensten#keuken`
+3. **Badkamerrenovatie** — → `/diensten#badkamer`
 
 ---
 
 ## Section 6: Next-project CTA
 
 **Headline (H2):**
-Een badkamer die de toon zet voor het hele huis?
+Een compacte renovatie die klopt op elk detail?
 
 **Body:**
-Niet elke badkamer hoeft een showstopper te zijn — maar als dat wel uw ambitie is, weten we precies waar we de meeste tijd in moeten steken. Laten we kennismaken.
+Een klein huis goed maken vraagt dezelfde zorg als een groot huis goed maken. Laten we kennismaken en bespreken wat haalbaar is in uw pand.
 
 **Primary CTA:**
 Plan een kennismakingsgesprek → `/contact`
@@ -100,15 +95,15 @@ Plan een kennismakingsgesprek → `/contact`
 ## SEO Metadata
 
 **Title tag:**
-Renovatie Crynssenstraat Oud-West — met designer badkamer | Tripod BV
+Renovatie Crynssenstraat Oud-West — complete bovenwoning | Tripod BV
 
 **Meta description:**
-Volledige renovatie van een bovenwoning in Amsterdam Oud-West met een hoogwaardige badkamer als centraal element. Door Tripod BV.
+Volledige renovatie van een bovenwoning in Amsterdam Oud-West — keuken, vloer, installaties, afwerking. Door Tripod BV.
 
 **Canonical:** `https://tripodbv.nl/projecten/crynssenstraat`
 **hreflang:** `nl` → `/projecten/crynssenstraat`, `en` → `/en/projects/crynssenstraat`
 
-**OG image:** Bathroom hero shot (the signature space).
+**OG image:** Project hero shot.
 
 **Schema.org:** `CreativeWork` markup.
 
@@ -116,6 +111,6 @@ Volledige renovatie van een bovenwoning in Amsterdam Oud-West met een hoogwaardi
 
 ## Copy Review Notes
 
-- Bathroom-as-centerpiece framing is the narrative hook — makes sense of the bathroom subfolder that Julius provided.
-- Same conventions as Celsiusstraat: consent confirmed, street address acceptable, photo curation to happen at implementation time.
-- Native Dutch review — "bovenwoning op drie hoog" is idiomatic Amsterdam Dutch; verify it reads right to non-Amsterdam readers.
+- **Reposition note (2026-04-18):** Previous version positioned this project as a "bathroom-hero" case study. That didn't match the actual photography — the bathroom wasn't the strongest documented ruimte here. Story reframed to "compact apartment, well-made" with kitchen + floor as the visual anchors. Bathroom-hero role shifted to the Orteliusstraat gallery (where the bathroom is actually the best-photographed room) and sitewide bathroom hero imagery is sourced from Willem van de Veldekade / Nieuwdammerdijk only.
+- Photo-dump template — keep body copy brief, let the gallery do the work.
+- Consent confirmed, street address acceptable.

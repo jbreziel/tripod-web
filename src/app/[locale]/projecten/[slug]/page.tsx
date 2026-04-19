@@ -70,6 +70,21 @@ export default async function ProjectDetailPage({
         </p>
       </Section>
 
+      {/* WIP banner */}
+      {project.wip && (
+        <Section py="sm" className="border-y border-[#C14B2D]/30 bg-[#C14B2D]/5">
+          <div className="flex items-start gap-4">
+            <span className="mt-0.5 shrink-0 rounded-sm bg-[#C14B2D] px-2.5 py-1 text-xs font-medium uppercase tracking-wider text-[#FAFAF7]">
+              In uitvoering
+            </span>
+            <p className="text-sm text-[#1A1A1A]/90 sm:text-base">
+              Dit project is momenteel in uitvoering. De fotografie wordt aangevuld zodra het
+              project is opgeleverd.
+            </p>
+          </div>
+        </Section>
+      )}
+
       {/* Hero image */}
       <div className="relative mx-auto aspect-[16/9] max-w-7xl overflow-hidden rounded-sm bg-[#E8E4DD] sm:aspect-[21/9]">
         <Image
@@ -257,6 +272,29 @@ export default async function ProjectDetailPage({
               ))}
             </div>
           )}
+        </Section>
+      )}
+
+      {/* Project video (WvdV — flagship) */}
+      {project.videoUrl && (
+        <Section py="lg">
+          <div className="mb-8">
+            <h2 className="mb-4 font-serif text-4xl font-medium text-[#1A1A1A] sm:text-5xl">
+              Een rondgang.
+            </h2>
+          </div>
+          <div className="relative mx-auto aspect-video max-w-6xl overflow-hidden rounded-sm bg-[#1A1A1A]">
+            <video
+              src={project.videoUrl}
+              poster={`/images/portfolio/${project.galleryFolder}/hero.jpg`}
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls
+              className="h-full w-full object-cover"
+            />
+          </div>
         </Section>
       )}
 

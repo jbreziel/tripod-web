@@ -43,6 +43,7 @@ export default async function ProjectsIndexPage({
             title={featured.title}
             neighborhood={featured.neighborhood}
             subtitle={featured.subtitle}
+            wip={featured.wip}
             featured
           />
         </div>
@@ -54,6 +55,7 @@ export default async function ProjectsIndexPage({
               title={project.title}
               neighborhood={project.neighborhood}
               subtitle={project.subtitle}
+              wip={project.wip}
             />
           ))}
         </div>

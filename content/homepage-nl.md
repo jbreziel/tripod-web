@@ -117,25 +117,26 @@ Elk project vraagt om andere keuzes. Hier een paar voorbeelden van wat dat in de
 
 **Project cards (3 across desktop, stacked mobile):**
 
-### Card 1 — Celsiusstraat 44-I, Oud-West
-- Image: Strongest wide shot from the Celsiusstraat photo set
-- Project name: **Renovatie Celsiusstraat 44-I**
-- One-line: *Volledige renovatie van een jaren-30 benedenwoning in Amsterdam Oud-West — karakter behouden, installaties vernieuwd.*
-- Link: `/projecten/celsiusstraat`
+### Card 1 — Willem van de Veldekade, Heemstede *(flagship)*
+- Image: Hero kitchen shot from the Willem van de Veldekade set
+- Project name: **Renovatie Willem van de Veldekade**
+- One-line: *Volledige renovatie van een tussenwoning in Heemstede — maatwerk keuken en badkamer, eikenhout door de hele woning.*
+- Link: `/projecten/willem-van-de-veldekade`
 
-### Card 2 — Crynssenstraat 53-III, Oud-West
-- Image: Bathroom hero shot (the signature room)
-- Project name: **Renovatie Crynssenstraat 53-III**
-- One-line: *Complete bovenwoningrenovatie in Oud-West, met een badkamer die de toon zet voor het hele huis.*
-- Link: `/projecten/crynssenstraat`
-
-### Card 3 — Nieuwdammerdijk, Amsterdam Noord
+### Card 2 — Nieuwdammerdijk, Amsterdam Noord *(flagship)*
 - Image: Open kitchen / wide leefruimte
 - Project name: **Renovatie Nieuwdammerdijk**
 - One-line: *Grondige renovatie van een ruime woning in Amsterdam Noord — herontwerp van de indeling, open keuken als hart.*
 - Link: `/projecten/nieuwdammerdijk`
 
-**Other projects live on `/projecten`:** ZSW Haarlem (boerderijrenovatie, anonymised) + Orteliusstraat (Oud-West pragmatic renovation).
+### Card 3 — Boerderijrenovatie Haarlem *(in uitvoering)*
+- Image: Wide exterior voortgangsfoto of atelier MONA ontwerp-rendering
+- **Badge/pill overlay:** "In uitvoering" (terracotta, bottom-right of image)
+- Project name: **Boerderijrenovatie Haarlem**
+- One-line: *Bestaande boerderij van 633 m² opgesplitst in twee zelfstandige woningen — staalconstructie in bestaand metselwerk, warmtepomp-installatie. Momenteel in uitvoering.*
+- Link: `/projecten/zsw-haarlem`
+
+**Other projects live on `/projecten`:** Crynssenstraat + Orteliusstraat (Oud-West complete renovations, photo-dump template).
 
 **CTA (text link under cards):**
 Alle projecten → (links to `/projecten`)

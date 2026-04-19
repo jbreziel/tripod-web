@@ -8,24 +8,17 @@ type ProjectCard = {
   oneLine: string;
   image: string;
   neighborhood: string;
+  wip?: boolean;
 };
 
 const projects: ProjectCard[] = [
   {
-    slug: "celsiusstraat",
-    title: "Renovatie Celsiusstraat 44-I",
+    slug: "willem-van-de-veldekade",
+    title: "Renovatie Willem van de Veldekade",
     oneLine:
-      "Volledige renovatie van een jaren-30 benedenwoning in Amsterdam Oud-West — karakter behouden, installaties vernieuwd.",
-    image: "/images/portfolio/celsiusstraat/hero.jpg",
-    neighborhood: "Amsterdam Oud-West",
-  },
-  {
-    slug: "crynssenstraat",
-    title: "Renovatie Crynssenstraat 53-III",
-    oneLine:
-      "Complete bovenwoningrenovatie in Oud-West, met een badkamer die de toon zet voor het hele huis.",
-    image: "/images/portfolio/crynssenstraat/hero.jpg",
-    neighborhood: "Amsterdam Oud-West",
+      "Volledige renovatie van een tussenwoning in Heemstede — maatwerk keuken en badkamer, eikenhout door de hele woning.",
+    image: "/images/portfolio/willem-van-de-veldekade/hero.jpg",
+    neighborhood: "Heemstede",
   },
   {
     slug: "nieuwdammerdijk",
@@ -34,6 +27,15 @@ const projects: ProjectCard[] = [
       "Grondige renovatie van een ruime woning in Amsterdam Noord — herontwerp van de indeling, open keuken als hart.",
     image: "/images/portfolio/nieuwdammerdijk/hero.jpg",
     neighborhood: "Amsterdam Noord",
+  },
+  {
+    slug: "zsw-haarlem",
+    title: "Boerderijrenovatie Haarlem",
+    oneLine:
+      "Bestaande boerderij van 633 m² opgesplitst in twee zelfstandige woningen — staalconstructie in bestaand metselwerk, warmtepomp-installatie.",
+    image: "/images/portfolio/zsw-haarlem/hero.jpg",
+    neighborhood: "Haarlem",
+    wip: true,
   },
 ];
 
@@ -66,6 +68,11 @@ export function PortfolioTeaser() {
                 sizes="(max-width: 768px) 100vw, 33vw"
                 unoptimized
               />
+              {project.wip && (
+                <span className="absolute right-3 bottom-3 rounded-sm bg-[#C14B2D] px-2.5 py-1 text-xs font-medium uppercase tracking-wider text-[#FAFAF7]">
+                  In uitvoering
+                </span>
+              )}
             </div>
             <div className="p-6">
               <p className="mb-2 text-xs uppercase tracking-wider text-[#6B6B6B]">

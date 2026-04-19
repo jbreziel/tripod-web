@@ -9,6 +9,7 @@ type ProjectCardProps = {
   subtitle: string;
   image?: string;
   featured?: boolean;
+  wip?: boolean;
 };
 
 export function ProjectCard({
@@ -18,6 +19,7 @@ export function ProjectCard({
   subtitle,
   image,
   featured = false,
+  wip = false,
 }: ProjectCardProps) {
   return (
     <Link
@@ -37,6 +39,11 @@ export function ProjectCard({
           sizes={featured ? "(max-width: 768px) 100vw, 66vw" : "(max-width: 768px) 100vw, 33vw"}
           unoptimized
         />
+        {wip && (
+          <span className="absolute right-3 bottom-3 rounded-sm bg-[#C14B2D] px-2.5 py-1 text-xs font-medium uppercase tracking-wider text-[#FAFAF7]">
+            In uitvoering
+          </span>
+        )}
       </div>
       <div className={featured ? "p-8" : "p-6"}>
         <p className="mb-2 text-xs uppercase tracking-wider text-[#6B6B6B]">{neighborhood}</p>
