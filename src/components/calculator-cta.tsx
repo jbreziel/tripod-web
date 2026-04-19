@@ -30,45 +30,47 @@ export function CalculatorCta() {
         </Link>
       </div>
 
-      {/* Calculator preview mock */}
-      <div className="relative">
-        <div className="rounded-lg border border-[#E8E4DD] bg-[#FAFAF7] p-8 shadow-sm">
-          <p className="mb-4 text-xs uppercase tracking-widest text-[#6B6B6B]">Uw richtprijs</p>
-          <div className="mb-6 grid grid-cols-3 gap-3">
-            <div className="rounded-sm border border-[#E8E4DD] bg-[#F0EBE2] p-3 text-center">
-              <p className="text-xs text-[#6B6B6B]">Keuken</p>
-              <div className="mt-2 h-1 rounded-full bg-[#C14B2D]" />
-            </div>
-            <div className="rounded-sm border border-[#E8E4DD] p-3 text-center opacity-60">
-              <p className="text-xs text-[#6B6B6B]">Badkamer</p>
-              <div className="mt-2 h-1 rounded-full bg-[#E8E4DD]" />
-            </div>
-            <div className="rounded-sm border border-[#E8E4DD] p-3 text-center opacity-60">
-              <p className="text-xs text-[#6B6B6B]">Uitbouw</p>
-              <div className="mt-2 h-1 rounded-full bg-[#E8E4DD]" />
-            </div>
+      {/* Calculator preview mock — entire card links to /offerte */}
+      <Link
+        href="/offerte"
+        className="group relative block rounded-lg border border-[#E8E4DD] bg-[#FAFAF7] p-8 shadow-sm transition-all hover:border-[#C14B2D] hover:shadow-md"
+        aria-label="Open de richtprijs-calculator"
+      >
+        <p className="mb-4 text-xs uppercase tracking-widest text-[#6B6B6B]">Uw richtprijs</p>
+        <div className="mb-6 grid grid-cols-3 gap-3">
+          <div className="rounded-sm border border-[#E8E4DD] bg-[#F0EBE2] p-3 text-center">
+            <p className="text-xs text-[#6B6B6B]">Keuken</p>
+            <div className="mt-2 h-1 rounded-full bg-[#C14B2D]" />
           </div>
-          <div className="mb-6">
-            <p className="mb-2 text-xs text-[#6B6B6B]">Oppervlakte</p>
-            <div className="relative h-2 rounded-full bg-[#E8E4DD]">
-              <div className="h-full w-[40%] rounded-full bg-[#C14B2D]" />
-            </div>
-            <p className="mt-1 text-xs text-[#6B6B6B]">15 m²</p>
+          <div className="rounded-sm border border-[#E8E4DD] p-3 text-center opacity-60 transition-opacity group-hover:opacity-100">
+            <p className="text-xs text-[#6B6B6B]">Badkamer</p>
+            <div className="mt-2 h-1 rounded-full bg-[#E8E4DD]" />
           </div>
-          <div className="mb-2 flex items-baseline justify-between">
-            <span className="text-xs text-[#6B6B6B]">Excl. BTW</span>
-            <span className="font-serif text-2xl font-semibold text-[#1A1A1A]">
-              €22.000 – €36.000
-            </span>
-          </div>
-          <div className="flex items-baseline justify-between">
-            <span className="text-xs text-[#6B6B6B]">Incl. BTW</span>
-            <span className="font-serif text-lg text-[#6B6B6B]">
-              €26.620 – €43.560
-            </span>
+          <div className="rounded-sm border border-[#E8E4DD] p-3 text-center opacity-60 transition-opacity group-hover:opacity-100">
+            <p className="text-xs text-[#6B6B6B]">Uitbouw</p>
+            <div className="mt-2 h-1 rounded-full bg-[#E8E4DD]" />
           </div>
         </div>
-      </div>
+        <div className="mb-6">
+          <p className="mb-2 text-xs text-[#6B6B6B]">Oppervlakte</p>
+          <div className="relative h-2 rounded-full bg-[#E8E4DD]">
+            <div className="h-full w-[40%] rounded-full bg-[#C14B2D]" />
+          </div>
+          <p className="mt-1 text-xs text-[#6B6B6B]">15 m²</p>
+        </div>
+        <div className="mb-2 flex items-baseline justify-between">
+          <span className="text-xs text-[#6B6B6B]">Excl. BTW</span>
+          <span className="font-serif text-2xl font-semibold text-[#1A1A1A]">
+            €22.000 – €36.000
+          </span>
+        </div>
+        <div className="flex items-baseline justify-between">
+          <span className="text-xs text-[#6B6B6B]">Incl. BTW</span>
+          <span className="font-serif text-lg text-[#6B6B6B]">
+            €26.620 – €43.560
+          </span>
+        </div>
+      </Link>
     </div>
   );
 }
