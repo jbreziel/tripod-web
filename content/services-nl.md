@@ -20,7 +20,94 @@ Tripod BV bouwt renovaties en uitbreidingen in Noord-Holland — van een enkele 
 
 ---
 
-## Section 2: Keukenrenovatie
+## Section 2: Volledige woningrenovatie
+
+**Visual:** Larger photo (wide living room or staircase shot), full-width section above intro. First service in the list — the flagship scope.
+
+**Service title (H2):**
+Volledige woningrenovatie.
+
+**Intro (Body):**
+Een complete woningrenovatie is geen optelsom van losse klussen — het is een bouwkundig project. Structuur, installaties, isolatie, en afwerking moeten elkaar versterken. Onze grotere renovaties lopen van een paar maanden tot een jaar, met Tripod als hoofdaannemer die alle trades aanstuurt.
+
+### Wat een volledige renovatie omvat
+- Sloopwerk en constructieve aanpassingen
+- Fundering-werk waar nodig
+- Staalconstructie en houtconstructie voor uitbreidingen of openingen
+- Dakwerk: isolatie, dakbedekking, eventueel dakopbouw
+- Kozijnen en glas vervangen
+- Volledige elektra en waterinstallatie opnieuw leggen
+- Warmtepomp en WTW-installatie (incl. subsidie-traject)
+- Stucwerk, tegelwerk, afwerking
+- Keuken en badkamers (zie onderstaande diensten)
+- Vloeren — PVC, hout, tegels, naar keuze
+- Buitenschilderwerk en -herstel
+- Volledige coördinatie van vergunningsproces met architect
+- Oplevering per ruimte + finale oplevering
+
+### Typische omvang en doorlooptijd
+| Type project | Omvang | Doorlooptijd indicatie |
+|---|---|---|
+| Grondige renovatie bestaande woning | 80 – 180 m² | 3 – 6 maanden |
+| Renovatie + uitbouw | 100 – 250 m² | 4 – 8 maanden |
+| Splitsing / herbestemming (bv. boerderij naar twee woningen) | 300 m²+ | 6 – 12 maanden |
+
+### Referentie
+Zie onze [Boerderijrenovatie Haarlem](/projecten/zsw-haarlem) voor een voorbeeld van wat een volledige herbestemming in de praktijk betekent — van sloopwerk tot warmtepomp-installatie in twee nieuwe woningen.
+
+### Indicatieve richtprijs
+Voor volledige renovaties verschilt de prijs per project te sterk om een tabel te zijn. Gemiddelde range in de Randstad ligt tussen €1.800 en €3.200 per m² BVO (excl. BTW), afhankelijk van staat van het pand en gekozen kwaliteitstier. **Gebruik de richtprijs-calculator** voor uw specifieke situatie.
+
+**CTA:**
+Bereken uw richtprijs → (links to `/offerte`)
+
+---
+
+## Section 3: Uitbouw & aanbouw
+
+**Visual:** Photo of modern extension — glass + wood + masonry juncture. Detail shot preferred over wide. Flipped layout (photo right, text left) for rhythm against the previous section.
+
+**Service title (H2):**
+Uitbouw & aanbouw.
+
+**Intro (Body):**
+Een uitbouw klinkt simpel — "gewoon een ruimte erbij" — maar de bouwkundige aansluiting op het bestaande werk maakt het verschil tussen een kamer die erbij hoort en eentje die voelt als een vreemd aanhangsel. Wij bouwen uitbreidingen die aansluiten alsof ze er altijd zijn geweest.
+
+### Wat erbij zit
+- Vergunningtraject (wij coördineren, architect dient in)
+- Fundering nieuwe uitbouw
+- Constructie (staal, hout, of combinatie)
+- Dakopbouw
+- Kozijnen en glas (vaak groot glaswerk voor uitbouwen)
+- Isolatie op Rc-waarde 6.0 of hoger
+- Binnenafwerking: vloer, wand, plafond
+- Installaties: elektra, verwarming (uitbreiding bestaand systeem of apart)
+- Aansluiting op bestaand huis — muuropeningen, gelijkleggen vloeren, dakverbinding
+- Buitenafwerking
+
+### Typische omvang
+- Kleine uitbouw (10 – 20 m²): serre of extra leefruimte
+- Grote uitbouw (25 – 50 m²): complete keukenuitbreiding of extra verdieping
+- Dakopbouw (extra verdieping): bouwkundig zwaarder, vaak structurele ingreep
+
+### Indicatieve richtprijs
+| Type uitbouw | Range per m² (excl. BTW) |
+|---|---|
+| Standaard uitbouw middenklasse | €2.400 – €3.600 per m² |
+| Hoogwaardige uitbouw | €3.600 – €5.500 per m² |
+| Luxe uitbouw met groot glaswerk | €5.500 – €8.000+ per m² |
+
+*Inclusief vergunningstraject en afwerking. Exclusief inrichting en keuken/badkamer in de uitbouw (daarvoor zie betreffende diensten).*
+
+### Doorlooptijd
+Vanaf vergunningsaanvraag tot oplevering: 4 – 8 maanden voor een standaard uitbouw, 6 – 12 maanden voor een dakopbouw of grote uitbreiding.
+
+**CTA:**
+Bereken uw richtprijs → (links to `/offerte`)
+
+---
+
+## Section 4: Keukenrenovatie
 
 **Visual:** Large photo on the left (kitchen detail), text block right. Stacked on mobile.
 
@@ -57,9 +144,9 @@ Bereken uw richtprijs → (links to `/offerte`)
 
 ---
 
-## Section 3: Badkamerrenovatie
+## Section 5: Badkamerrenovatie
 
-**Visual:** Photo left, text right. Alternates orientation with keuken section for rhythm.
+**Visual:** Photo left, text right. Flipped layout for rhythm against the previous section.
 
 **Service title (H2):**
 Badkamerrenovatie.
@@ -90,93 +177,6 @@ Een badkamer is bouwkundig gezien de meest complexe ruimte in een woning — wat
 
 ### Hoe we werken
 Een complete badkamerrenovatie duurt meestal drie tot vijf weken, afhankelijk van de staat van het leidingwerk. We werken waterdicht: tussentijdse waterafsluiting is minimaal, vaak onbemerkt voor de rest van het huis. Tegelwerk doen we zelf — geen onderaannemer die terugkomt voor ontbrekende voegen.
-
-**CTA:**
-Bereken uw richtprijs → (links to `/offerte`)
-
----
-
-## Section 4: Volledige woningrenovatie
-
-**Visual:** Larger photo (wide living room or staircase shot), full-width section above intro.
-
-**Service title (H2):**
-Volledige woningrenovatie.
-
-**Intro (Body):**
-Een complete woningrenovatie is geen optelsom van losse klussen — het is een bouwkundig project. Structuur, installaties, isolatie, en afwerking moeten elkaar versterken. Onze grotere renovaties lopen van een paar maanden tot een jaar, met Tripod als hoofdaannemer die alle trades aanstuurt.
-
-### Wat een volledige renovatie omvat
-- Sloopwerk en constructieve aanpassingen
-- Fundering-werk waar nodig
-- Staalconstructie en houtconstructie voor uitbreidingen of openingen
-- Dakwerk: isolatie, dakbedekking, eventueel dakopbouw
-- Kozijnen en glas vervangen
-- Volledige elektra en waterinstallatie opnieuw leggen
-- Warmtepomp en WTW-installatie (incl. subsidie-traject)
-- Stucwerk, tegelwerk, afwerking
-- Keuken en badkamers (zie bovenstaande diensten)
-- Vloeren — PVC, hout, tegels, naar keuze
-- Buitenschilderwerk en -herstel
-- Volledige coördinatie van vergunningsproces met architect
-- Oplevering per ruimte + finale oplevering
-
-### Typische omvang en doorlooptijd
-| Type project | Omvang | Doorlooptijd indicatie |
-|---|---|---|
-| Grondige renovatie bestaande woning | 80 – 180 m² | 3 – 6 maanden |
-| Renovatie + uitbouw | 100 – 250 m² | 4 – 8 maanden |
-| Splitsing / herbestemming (bv. boerderij naar twee woningen) | 300 m²+ | 6 – 12 maanden |
-
-### Referentie
-Zie onze [Boerderijrenovatie Haarlem](/projecten/zsw-haarlem) voor een voorbeeld van wat een volledige herbestemming in de praktijk betekent — van sloopwerk tot warmtepomp-installatie in twee nieuwe woningen.
-
-### Indicatieve richtprijs
-Voor volledige renovaties verschilt de prijs per project te sterk om een tabel te zijn. Gemiddelde range in de Randstad ligt tussen €1.800 en €3.200 per m² BVO (excl. BTW), afhankelijk van staat van het pand en gekozen kwaliteitstier. **Gebruik de richtprijs-calculator** voor uw specifieke situatie.
-
-**CTA:**
-Bereken uw richtprijs → (links to `/offerte`)
-
----
-
-## Section 5: Uitbouw & aanbouw
-
-**Visual:** Photo of modern extension — glass + wood + masonry juncture. Detail shot preferred over wide.
-
-**Service title (H2):**
-Uitbouw & aanbouw.
-
-**Intro (Body):**
-Een uitbouw klinkt simpel — "gewoon een ruimte erbij" — maar de bouwkundige aansluiting op het bestaande werk maakt het verschil tussen een kamer die erbij hoort en eentje die voelt als een vreemd aanhangsel. Wij bouwen uitbreidingen die aansluiten alsof ze er altijd zijn geweest.
-
-### Wat erbij zit
-- Vergunningtraject (wij coördineren, architect dient in)
-- Fundering nieuwe uitbouw
-- Constructie (staal, hout, of combinatie)
-- Dakopbouw
-- Kozijnen en glas (vaak groot glaswerk voor uitbouwen)
-- Isolatie op Rc-waarde 6.0 of hoger
-- Binnenafwerking: vloer, wand, plafond
-- Installaties: elektra, verwarming (uitbreiding bestaand systeem of apart)
-- Aansluiting op bestaand huis — muuropeningen, gelijkleggen vloeren, dakverbinding
-- Buitenafwerking
-
-### Typische omvang
-- Kleine uitbouw (10 – 20 m²): serre of extra leefruimte
-- Grote uitbouw (25 – 50 m²): complete keukenuitbreiding of extra verdieping
-- Dakopbouw (extra verdieping): bouwkundig zwaarder, vaak structurele ingreep
-
-### Indicatieve richtprijs
-| Type uitbouw | Range per m² (excl. BTW) |
-|---|---|
-| Standaard uitbouw middenklasse | €2.400 – €3.600 per m² |
-| Hoogwaardige uitbouw | €3.600 – €5.500 per m² |
-| Luxe uitbouw met groot glaswerk | €5.500 – €8.000+ per m² |
-
-*Inclusief vergunningstraject en afwerking. Exclusief inrichting en keuken/badkamer in de uitbouw (daarvoor zie betreffende diensten).*
-
-### Doorlooptijd
-Vanaf vergunningsaanvraag tot oplevering: 4 – 8 maanden voor een standaard uitbouw, 6 – 12 maanden voor een dakopbouw of grote uitbreiding.
 
 **CTA:**
 Bereken uw richtprijs → (links to `/offerte`)
@@ -272,10 +272,10 @@ Of bel direct: +31 6 1437 4866
 ## SEO Metadata
 
 **Title tag:**
-Diensten — Keuken, badkamer, renovatie & uitbouw | Tripod BV
+Diensten — Volledige renovatie, uitbouw, keuken & badkamer | Tripod BV
 
 **Meta description:**
-Keukenrenovatie, badkamerrenovatie, volledige woningrenovatie en uitbouw in Haarlem en Noord-Holland. Richtprijs direct zichtbaar. Eigen team, transparante prijzen.
+Volledige woningrenovatie, uitbouw, keukenrenovatie en badkamerrenovatie in Haarlem en Noord-Holland. Richtprijs direct zichtbaar. Eigen team, transparante prijzen.
 
 **Canonical:** `https://tripodbv.nl/diensten`
 **hreflang:** `nl` → `/diensten`, `en` → `/en/services`
@@ -289,4 +289,4 @@ Keukenrenovatie, badkamerrenovatie, volledige woningrenovatie en uitbouw in Haar
 - Ranges in the pricing tables are launch hypotheses. Validate against actual Tripod offertes (pull from `/estimate` records) before going live.
 - If Guus wants to add a fifth service (e.g. dakwerk, gevelherstel) as a standalone, add a new section following the same structure.
 - "12 maanden nazorg" in section 6 must match whatever guarantee Tripod actually offers — verify with Guus.
-- Reference to ZSW project in section 4 assumes the case study publishes anonymised — keep the link + anonymised title consistent.
+- Reference to ZSW project in section 2 assumes the case study publishes anonymised — keep the link + anonymised title consistent.
